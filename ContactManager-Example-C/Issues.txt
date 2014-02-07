@@ -1,0 +1,14 @@
+1. Search does not work correctly
+2. Delete does not work correctly
+3. You cannot open a new contacts file once you start the program.
+4. Code cleanup: too many magic constants
+5. Code cleanup: the menu system is fragile
+6. Would like to also be able to print the contacts to a file using the same format as when they are printed to the screen.
+7. Look for memory issues.
+8. Opening contacts files with more than 20 contacts does not work correctly.
+9. Sorting data does not work.
+10. Translation from input menu to Field enumeration is fragile.
+11. No easy way to add a new field to the contacts
+12. Would be better to back the data up via SQLite than a text file.
+13. Documentation: Some comments are wrong or missing.
+14. Use a better data structure for in-memory data than a array.
