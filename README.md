@@ -14,3 +14,4 @@ than others, and some issue reports are more descriptive than others.
 
 
 
+As as student, you should be able to fork this repository, work on your copy to fix an issue, and then send a pull request with your change.
