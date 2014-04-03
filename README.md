@@ -19,6 +19,7 @@ The code is written in C and contains the necessary files for an Eclipse project
 A number of issues are associated with this repository that you can choose to fix.  Some issues are more difficult
 than others, and some issue reports are more descriptive than others.  There may be issues in the code that have not been reported, and some reported issues may have misleading descriptions.  This is done to better emulate the fact that bug reports against a project are never perfect.  There are a wide variety of issues listed. Some issues are bugs, some issues are enhancements or requests for new functionality, and some are documentation issues.  Each student should be able to choose an issue of the appropriate difficulty to fix.
  
+**Be sure to run the cmanager executable from the root directory like so:** `bin/cmanager`
 
 ### C Programming skills required to work with this code base include but are not limited to:###
 
