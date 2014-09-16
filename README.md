@@ -35,3 +35,42 @@ than others, and some issue reports are more descriptive than others.  There may
 
 The coding conventions used in this code are located here: http://zeus.cs.pacificu.edu/chadd/cs300f11/coding.C.v6.pdf
 An importable Eclipe Code Style Formatter description can be found here: http://zeus.cs.pacificu.edu/chadd/cs300f11/CS300PrefsF11.xml.tar.gz
+
+You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.geany.org/) or any other text editor for this project.
+
+### Workflow ###
+
+1. Fork your group's ContactManger-Example-C repository to your personal GitHub Account.
+2. Clone your personal copy of ContactManager-Example-C to your local computer `git clone git@github.com:USER/ContactManager-Example-C-Group-NUMBER.git`  replacing USER and NUMBER.
+3. Choose an issue to work on.  Comment on that issue to claim it.
+4. **In your local repository on your computer:** Make a branch:
+  * `git branch PUNETID_issue_XXX`
+  * `git checkout PUNETID_issue_XXX`
+5. Edit file(s).
+6. `git add FILE`
+7. `git commit -m "message"`
+8. Push changes to your personal GitHub Account
+  * `git push origin PUNETID_issue_XXX`
+9. **From your web browser** Make a pull request back to your group's repository.  Be sure to use branch `PUNETID_issue_xxx`.
+10. Wait for at least one positive comment from teammates. 
+  * If you get negative comments or suggestions, go back and edit the files. 
+  * **In your local repository on your computer:** `git add ...` `git commit .... ` `git push origin PUNETID_issue_XXX`. Go to #10.
+12. **From your web browser** Merge the pull request in the group repository.  **If the merge cannot happen automatically**, click "Use the command line" and follow the directions. Replace the https address in the pull request with the correct ssh address!  **It is best to do a fresh checkout into a new directory to resolve this conflict!** *Note: Pressing the SSH buttton may give you an error. Press the back arrow on your browser and try again or don't press the SSH button and just use the correct SSH address in line 2 of step 1.*
+  * Step zero:
+   ```
+    cd ~/Documents; 
+    mkdir issue_XXX; 
+    cd issue_XXX; 
+    git clone git@github.com:cs360f14/ContactManager-Example-C-Group-NUMBER.git
+   ```  
+   **NOTE:** Use **cs360f14** not **PUNETID**.
+  ![Merge](http://zeus.cs.pacificu.edu/chadd/cs360f14/TestReposMergeConflictEdit.png "Merge")
+10. In your local repository:
+  * `git checkout master`
+  * `git fetch upstream master`
+  * `git merge upstream/master`
+  * On succcess: `git push origin master` to push commits up to your personal repository on GitHub.
+  * On success, `git branch -d PUNETID_issue_XXX` Delete the branch
+  * At this point you can delete any directory you created in step 11 if you want.
+  * Go close the Issue listed in the group repository.
+11. Goto to step #3.
