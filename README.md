@@ -42,7 +42,8 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
 
 1. Fork your group's ContactManger-Example-C repository to your personal GitHub Account.
 2. Clone your personal copy of ContactManager-Example-C to your local computer `git clone git@github.com:USER/ContactManager-Example-C-Group-NUMBER.git`  replacing USER and NUMBER.
-  *`git remote add upstream git@github.com:cs360f14/ContactManager-Example-C-Group-NUMBER.git`
+  * Add the upstream:
+  * `git remote add upstream git@github.com:cs360f14/ContactManager-Example-C-Group-NUMBER.git`
 3. Choose an issue to work on.  Comment on that issue to claim it.
 4. **In your local repository on your computer:** Make a branch:
   * `git branch PUNETID_issue_XXX`
