@@ -68,6 +68,7 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
    **NOTE:** Use **cs360f14** not **PUNETID**.
   ![Merge](http://zeus.cs.pacificu.edu/chadd/cs360f14/TestReposMergeConflictEdit.png "Merge")
   * In the above image, the SSH address should be `git@github.com:USER/ContactManager-Example-C-Group-NUMBER.git`
+  * `master` in the `git pull` command represents the branch in the remote repository. Likely, this will be `PUNETID_issue_XXX` for you rather than `master`.
 10. **In your local repository on your computer:** bring down the updates to the group repository
   * `git checkout master`
   * `git fetch upstream master`  Get changes from the group repository
