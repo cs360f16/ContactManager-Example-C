@@ -65,6 +65,7 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
    ```  
    **NOTE:** Use **cs360f14** not **PUNETID**.
   ![Merge](http://zeus.cs.pacificu.edu/chadd/cs360f14/TestReposMergeConflictEdit.png "Merge")
+  * In the above image, the SSH address should be `git@github.com:USER/ContactManager-Example-C-Group-NUMBER.git`
 10. In your local repository:
   * `git checkout master`
   * `git fetch upstream master`
