@@ -66,12 +66,20 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
    **NOTE:** Use **cs360f14** not **PUNETID**.
   ![Merge](http://zeus.cs.pacificu.edu/chadd/cs360f14/TestReposMergeConflictEdit.png "Merge")
   * In the above image, the SSH address should be `git@github.com:USER/ContactManager-Example-C-Group-NUMBER.git`
-10. In your local repository:
+10. **In your local repository on your computer:** bring down the updates to the group repository
   * `git checkout master`
-  * `git fetch upstream master`
-  * `git merge upstream/master`
-  * On succcess: `git push origin master` to push commits up to your personal repository on GitHub.
-  * On success, `git branch -d PUNETID_issue_XXX` Delete the branch
+  * `git fetch upstream master`  Get changes from the group repository
+  * `git merge upstream/master`  Merge those changes back to `master` on your local repository.
+    * On succcess: `git push origin master` to push commits up to your personal repository on GitHub.
+    * On success, `git branch -d PUNETID_issue_XXX` Delete the branch
+    * On failure: Resolve the conflict.  
+      * edit files to remove the >>> === <<<
+      * `git add FILE`
+      * `git commit -m "message"`
+      * `git merge upstream/master`
+      * Push to origin from master.
   * At this point you can delete any directory you created in step 11 if you want.
   * Go close the Issue listed in the group repository.
+  * **NOTE** Anytime a team member commits to the group repository you can update `master` in your local repository.
+  * **Remember, never switch branches with uncommited changes!**
 11. Goto to step #3.
