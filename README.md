@@ -40,7 +40,8 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
 
 ### Workflow ###
 
-1. Fork your group's ContactManger-Example-C-Group-NUMBER repository to your personal GitHub Account.
+1. In this document `USER` means your GitHub username.
+2. Fork your group's ContactManger-Example-C-Group-NUMBER repository to your personal GitHub Account.
 2. Clone your personal copy of ContactManager-Example-C-Group-NUMBER to your local computer `git clone git@github.com:USER/ContactManager-Example-C-Group-NUMBER.git`  replacing USER and NUMBER.
   * Add the upstream:
   * `git remote add upstream git@github.com:cs360f16/ContactManager-Example-C-Group-NUMBER.git`
@@ -59,7 +60,7 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
   * **In your local repository on your computer:** `git add ...` `git commit .... ` `git push origin PUNETID_issue_XXX`. Go to #10.
 12. **From your web browser** Merge the pull request in the group repository.
   * Note: The [GitHub Merge Button] (https://help.github.com/articles/merging-a-pull-request/) always does a `--no-ff` unless you specify [Squash and merge] (https://help.github.com/articles/about-pull-request-merges/).  **Despite** what I said in class, I recommend you **NOT** squash commits. Squashing commits can *still* produce repositories out of sync because multiple commits in the local repository may be squashed into one commit in the remote repository, creating a commit in the remote repository with a hash code that does not exist locally.
-  * **If the merge cannot happen automatically**, click "Use the command line" and follow the directions. Replace the https address in the pull request with the correct ssh address!  **It is best to do a fresh checkout into a new directory to resolve this conflict!** *Note: Pressing the SSH buttton may give you an error. Press the back arrow on your browser and try again or don't press the SSH button and just use the correct SSH address in line 2 of step 1.*
+  * **If the merge cannot happen automatically**, click "command line instructions" and follow the directions. See an image below for a guide.  **It is best to do a fresh checkout into a new directory to resolve this conflict!** 
   * Step zero:
    ```
     cd ~/Documents; 
@@ -68,14 +69,13 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
     git clone git@github.com:cs360f16/ContactManager-Example-C-Group-NUMBER.git
     cd ContactManager-Example-C-Group-NUMBER
    ```  
-   **NOTE:** Use **cs360f16** not **PUNETID**.
+   **NOTE:** Use **cs360f16** above, not **USER**.  You must pull down the group repository here.
    
-   **NOTE:** The the screen shot below indicates you should use `--no-ff`.  Your group should decide if you want to use the `--no-ff` option or not.  **Despite** what I said in class, I recommend you **DO USE** `--no-ff`. 
    * Step one:
      * Follow the steps listed in the Checkout via command line box.  The commands will look something like this:
       ```
       git checkout -b USER-PUNETID_issue_XXX master
-      git pull git@github.com:USER/ContactManager-Example-C-Group-NUMBER.git PUNETID_issue_XXX
+      git pull https://github.com/USER/ContactManager-Example-C-Group-NUMBER.git PUNETID_issue_XXX
       
       edit files to fix merge conflicts
       
@@ -86,8 +86,8 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
       git merge --no-ff USER-PUNETID_issue_XXX
       git push origin master
       ```
+     **NOTE:** The the screen shot below indicates you should use `--no-ff`.  **Despite** what I said in class, I recommend you **DO USE** `--no-ff`.
   ![Merge](http://zeus.cs.pacificu.edu/chadd/cs360f16/MergeButton.png "Merge")
-  * In the above image, the address in the `pull` line should be `git@github.com:USER/ContactManager-Example-C-Group-NUMBER.git`
   * `pull_testing_1258` in the `git pull` command represents the branch in the remote repository. Likely, this will be `PUNETID_issue_XXX` for you rather than `pull_testing_1258`.
 10. **In your local repository on your computer:** bring down the updates from the group repository
   * `git checkout master`
