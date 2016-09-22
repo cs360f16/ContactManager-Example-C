@@ -58,7 +58,7 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
   * If you get negative comments or suggestions, go back and edit the files. 
   * **In your local repository on your computer:** `git add ...` `git commit .... ` `git push origin PUNETID_issue_XXX`. Go to #10.
 12. **From your web browser** Merge the pull request in the group repository.
-  * Note: The [GitHub Merge Button] (https://help.github.com/articles/merging-a-pull-request/) always does a `--no-ff` unless you specify [Squash and merge] (https://help.github.com/articles/about-pull-request-merges/).
+  * Note: The [GitHub Merge Button] (https://help.github.com/articles/merging-a-pull-request/) always does a `--no-ff` unless you specify [Squash and merge] (https://help.github.com/articles/about-pull-request-merges/).  Squashing commits can *still* produce repositories out of sync because multiple commits in the local repository may be squashed into one commit in the remote repository, creating a commit in the remote repository with a hash code that does not exist locally.
   * **If the merge cannot happen automatically**, click "Use the command line" and follow the directions. Replace the https address in the pull request with the correct ssh address!  **It is best to do a fresh checkout into a new directory to resolve this conflict!** *Note: Pressing the SSH buttton may give you an error. Press the back arrow on your browser and try again or don't press the SSH button and just use the correct SSH address in line 2 of step 1.*
   * Step zero:
    ```
