@@ -86,3 +86,13 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
   * **NOTE** Anytime a team member commits to the group repository you can update `master` in your local repository.
   * **Remember, never switch branches with uncommited changes!**
 11. Goto to step #3.
+
+### How to use this repository as a classroom exercise ###
+In order to use this repository to simulate a group open source project, I do the following:
+* Create a GitHub Team for each student group
+* [Duplicate this repository] (https://help.github.com/articles/duplicating-a-repository/) for each student group.  
+  *  For example, I create ContactManager-Example-C-Group-1 for group 1.
+* Clone the issues from this repository to each of the new -Group-# repositories.
+  * You can use [github-issues-import] (https://github.com/chaddcw/github-issues-import) to copy issues from one repository to another.  
+  * I use the [issue\_noheader.md] (https://github.com/chaddcw/github-issues-import/blob/issue\_noheader\_template/templates/issue\_noheader.md) template to keep the issues in the Group repositories looking clean.
+* Each group follows the workflow above to manage their group repository.
