@@ -57,7 +57,9 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
 10. Wait for at least one positive comment from teammates. 
   * If you get negative comments or suggestions, go back and edit the files. 
   * **In your local repository on your computer:** `git add ...` `git commit .... ` `git push origin PUNETID_issue_XXX`. Go to #10.
-12. **From your web browser** Merge the pull request in the group repository.  **If the merge cannot happen automatically**, click "Use the command line" and follow the directions. Replace the https address in the pull request with the correct ssh address!  **It is best to do a fresh checkout into a new directory to resolve this conflict!** *Note: Pressing the SSH buttton may give you an error. Press the back arrow on your browser and try again or don't press the SSH button and just use the correct SSH address in line 2 of step 1.*
+12. **From your web browser** Merge the pull request in the group repository.
+  * Note: The [GitHub Merge Button] (https://help.github.com/articles/merging-a-pull-request/) always does a `--no-ff` unless you specify [Squash and merge] (https://help.github.com/articles/about-pull-request-merges/).
+  * **If the merge cannot happen automatically**, click "Use the command line" and follow the directions. Replace the https address in the pull request with the correct ssh address!  **It is best to do a fresh checkout into a new directory to resolve this conflict!** *Note: Pressing the SSH buttton may give you an error. Press the back arrow on your browser and try again or don't press the SSH button and just use the correct SSH address in line 2 of step 1.*
   * Step zero:
    ```
     cd ~/Documents; 
@@ -66,6 +68,8 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
     git clone git@github.com:cs360f16/ContactManager-Example-C-Group-NUMBER.git
    ```  
    **NOTE:** Use **cs360f16** not **PUNETID**.
+   
+   **NOTE:** The the screen shot below indicates you should use `--no-ff`.  Your group should decide if you want to use the `--no-ff` option or not.
   ![Merge](http://zeus.cs.pacificu.edu/chadd/cs360f16/TestReposMergeConflictEdit.png "Merge")
   * In the above image, the SSH address should be `git@github.com:USER/ContactManager-Example-C-Group-NUMBER.git`
   * `master` in the `git pull` command represents the branch in the remote repository. Likely, this will be `PUNETID_issue_XXX` for you rather than `master`.
