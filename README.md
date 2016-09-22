@@ -66,13 +66,29 @@ You are welcome to use [Eclipse](http://eclipse.org) or [Geany] (http://www.gean
     mkdir issue_XXX; 
     cd issue_XXX; 
     git clone git@github.com:cs360f16/ContactManager-Example-C-Group-NUMBER.git
+    cd ContactManager-Example-C-Group-NUMBER
    ```  
    **NOTE:** Use **cs360f16** not **PUNETID**.
    
    **NOTE:** The the screen shot below indicates you should use `--no-ff`.  Your group should decide if you want to use the `--no-ff` option or not.  **Despite** what I said in class, I recommend you **DO USE** `--no-ff`. 
-  ![Merge](http://zeus.cs.pacificu.edu/chadd/cs360f16/TestReposMergeConflictEdit.png "Merge")
-  * In the above image, the SSH address should be `git@github.com:USER/ContactManager-Example-C-Group-NUMBER.git`
-  * `master` in the `git pull` command represents the branch in the remote repository. Likely, this will be `PUNETID_issue_XXX` for you rather than `master`.
+   * Step one:
+     * Follow the steps listed in the Checkout via command line box.  The commands will look something like this:
+      ```
+      git checkout -b USER-PUNETID_issue_XXX master
+      git pull git@github.com:USER/ContactManager-Example-C-Group-NUMBER.git PUNETID_issue_XXX
+      
+      edit files to fix merge conflicts
+      
+      git add <files edited above>
+      git commit -m "some good message"
+      
+      git checkout master
+      git merge --no-ff USER-PUNETID_issue_XXX
+      git push origin master
+      ```
+  ![Merge](http://zeus.cs.pacificu.edu/chadd/cs360f16/MergeButton.png "Merge")
+  * In the above image, the address in the `pull` line should be `git@github.com:USER/ContactManager-Example-C-Group-NUMBER.git`
+  * `pull_testing_1258` in the `git pull` command represents the branch in the remote repository. Likely, this will be `PUNETID_issue_XXX` for you rather than `pull_testing_1258`.
 10. **In your local repository on your computer:** bring down the updates from the group repository
   * `git checkout master`
   * `git fetch upstream master`  Get changes from the group repository
