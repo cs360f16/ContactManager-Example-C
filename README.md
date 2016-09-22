@@ -92,6 +92,8 @@ In order to use this repository to simulate a group open source project, I do th
 * Create a GitHub Team for each student group
 * [Duplicate this repository] (https://help.github.com/articles/duplicating-a-repository/) for each student group.  
   *  For example, I create ContactManager-Example-C-Group-1 for group 1.
+  *  The group is given Admin rights to its own Group repository
+  *  The instructor is given Admin rights to each Group repository
 * Clone the issues from this repository to each of the new -Group-# repositories.
   * You can use [github-issues-import] (https://github.com/chaddcw/github-issues-import) to copy issues from one repository to another.  
   * I use the [issue\_noheader.md] (https://github.com/chaddcw/github-issues-import/blob/issue\_noheader\_template/templates/issue\_noheader.md) template to keep the issues in the Group repositories looking clean.
